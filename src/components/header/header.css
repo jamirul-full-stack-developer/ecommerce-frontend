@@ -1,3 +1,66 @@
-header{
-    color: red;
+:root{
+    --bg-header-logo:rgb(21, 9, 57);
+}
+
+
+.header_wrapper{
+    margin: auto;
+    background-color: var(--bg-header-logo);
+    color: white;
+}
+
+.header_content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.7rem;
+    margin: 0 5rem;
+}
+.wigets{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+.wigets div svg{
+    margin: .5rem .9rem;
+    cursor: pointer;
+}
+
+
+
+
+/* serach component style start here */
+
+.search_wrapper{
+    min-width: 600px;
+    position: relative;
+    margin: .2rem 0;
+
+}
+.btn-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-icon svg{
+    font-size: 1.2rem;
+}
+.search_wrapper input{
+    width: 100%;
+    flex-grow: 1;
+    padding: .6rem .8rem;
+
+    
+}
+.search_wrapper input:focus{
+    outline-style: none;
 }
