@@ -19,10 +19,24 @@ function Header() {
           <SearchBar />
           {/* right widgets */}
           <div className="wigets">
-            <div className="account"><MdAccountCircle/></div>
-            <div className="wishlist"><AiOutlineHeart/></div>
-            <div className="orders"><HiClipboardList/></div>
-            <div className="cart"><AiOutlineShoppingCart/></div>
+
+        
+            <div className="wiget">
+            <div className="wiget_icon"><MdAccountCircle/></div>
+              <p>Hey , Guest</p>
+            </div>
+            <div className="wiget">
+            <div className="wiget_icon"><AiOutlineHeart/><span>0</span></div>
+            <p>WishList</p>
+            </div>
+            <div className="wiget">
+            <div className="wiget_icon"><HiClipboardList/><span>0</span></div>
+              <p>Orders</p>
+            </div>
+            <div className="wiget">
+            <div className="wiget_icon"><AiOutlineShoppingCart/><span>0</span></div>
+            <p>Cart</p>
+            </div>
           </div>
         </div>
       </div>

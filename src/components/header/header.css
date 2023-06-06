@@ -1,5 +1,5 @@
 :root{
-    --bg-header-logo:rgb(21, 9, 57);
+    --bg-header-logo:#0F1111;
 }
 
 
@@ -19,18 +19,52 @@
     font-size: 1.7rem;
     margin: 0 5rem;
 }
+.logo:hover{
+    outline: 1px solid white;
+}
+
+
+/* right widget style start here */
+
+
 .wigets{
     display: flex;
     align-items: center;
     margin: 0 2rem;
     justify-content: space-between;
-    font-size: 1.7rem;
+   
 }
-.wigets div svg{
-    margin: .5rem .9rem;
+.wiget{
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    margin: .4rem .4rem;
+    padding: .2rem .5rem;
+    transition: .7s ease-in;
+}
+.wiget:hover{
+    outline: 1px solid white;
+}
+.wiget_icon{
+    position: relative;
+  
+}
+.wiget_icon span{
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    background-color: blue;
+    padding: 0 .3rem;
+    border-radius: .5rem;
+}
+.wiget svg{
+    color: white;
+    font-size: 1.7rem;
+    margin: .5rem .9rem;
+
 }
 
+/* right widget style end here */
 
 
 
@@ -39,10 +73,11 @@
 .search_wrapper{
     min-width: 600px;
     position: relative;
-    margin: .2rem 0;
+    margin: .4rem 0;
 
 }
 .btn-icon{
+    background-color: #febd69;
     position: absolute;
     top: 0;
     right: 0;
@@ -52,12 +87,14 @@
     cursor: pointer;
 }
 .btn-icon svg{
+    color: gray;
     font-size: 1.2rem;
 }
 .search_wrapper input{
     width: 100%;
     flex-grow: 1;
     padding: .6rem .8rem;
+
 
     
 }
